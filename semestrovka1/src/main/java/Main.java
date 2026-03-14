@@ -6,6 +6,7 @@ public class Main {
 
         File[] files = new File(".").listFiles((d, name) -> name.startsWith("graph_") && name.endsWith(".txt"));
 
+        //проходимся по файлу
         for (File file : files) {
             Graph graph = GraphLoader.loadFromFile(file.getAbsolutePath());
 

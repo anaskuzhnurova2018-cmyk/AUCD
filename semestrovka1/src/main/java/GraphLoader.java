@@ -18,7 +18,7 @@ public class GraphLoader {
 
         Graph graph = new Graph(n);
 
-        //построчно читаем ребра
+        // построчно читаем ребра
         String line;
         while((line = reader.readLine()) != null && !line.isEmpty()) {
             String[] parts = line.trim().split("\\s+"); //разбиваем по пробелам
